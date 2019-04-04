@@ -8,5 +8,10 @@ Rails.application.routes.draw do
   get "/bookmarks/:id", to: "bookmarks#show", as: "bookmark"
 
   put "/bookmarks/:id", to: "bookmarks#update"
+  patch "/bookmarks/:id", to: "bookmarks#update"
+
+  get "/bookmarks/:id/edit", to: "bookmarks#edit", as: "edit_bookmark"
+
+  delete "/bookmarks/:id", to: "bookmarks#delete"
 
 end
