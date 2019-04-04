@@ -1,2 +1,12 @@
-<h1>Bookmarks#new</h1>
-<p>Find me in app/views/bookmarks/new.html.erb</p>
+<h1>New Bookmark</h1>
+
+<form action="<%= bookmarks_path %>" method="POST">
+  <p>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" />
+  </p>
+  <p>
+    <label for="url">URL:</label>
+    <input type="text" name="url" id="url" />
+  </p>
+</form>
