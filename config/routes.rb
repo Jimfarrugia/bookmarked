@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'bookmarks/new'
+  get 'bookmarks/create'
   get "/bookmarks", to: "bookmarks#index", as: "bookmarks"
 
   post "/bookmarks", to: "bookmarks#create"
